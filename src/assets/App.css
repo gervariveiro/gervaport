@@ -1,0 +1,41 @@
+/*.encabezado{
+    display:flex;
+    background-image: linear-gradient(red,blue);
+    justify-content: center;
+}*/
+body {
+  height: 800px;
+  color: #44484a; }
+
+html {
+  font-size: 13px; }
+ 
+.filosofia{
+    margin-top: 100px;
+  }
+
+.card:hover {
+  -webkit-box-shadow: 0 0 10px rgba(134, 134, 134, 0.555);
+          box-shadow: 0 0 10px rgba(134, 134, 134, 0.555); }
+
+.bg-primary {
+  background-color: #098877 !important; }
+
+.text-primary {
+  color: #098877 !important; }
+
+.btn-primary {
+  background-color: #098877 !important;
+  border-color: #044038 !important; }
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #066256 !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(9, 136, 119, 0.5) !important;
+          box-shadow: 0 0 0 0.2rem rgba(9, 136, 119, 0.5) !important; }
+
+.btn-primary:active {
+  background-color: #066256 !important;
+  border-color: #032823 !important; }
+
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,143 @@
+import React from 'react';
+import NavigateBar from '../components/Navbar.js';
+import GervaPhoto from '../assets/gervaphoto1.jpg';
+import HtmlIcon from '../assets/htmlicon.png';
+import CssIcon from '../assets/cssicon.png';
+import DbIcon from '../assets/dbicon.png';
+import NodeIcon from '../assets/nodeicon.png';
+import ReactIcon from '../assets/reacticon.png';
+import JsIcon from '../assets/jsicon.png';
+import F1Img from '../assets/f1photo.jpg';
+import FarmImg from '../assets/farmphoto.jpg';
+import TwitchIcon from '../assets/twitchicon.png';
+import GitHubIcon from '../assets/githubicon.png';
+import FaceIcon from '../assets/faceicon.png';
+import LinkedIcon from '../assets/linkedicon.png';
+import swal from 'sweetalert';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faFileArrowDown} from '@fortawesome/free-solid-svg-icons';
+
+
+function Home () {
+
+    const mostrarAlert = () => { 
+        swal({
+            title: "Your message was sent",
+            icon: "success",
+            button: "Close"
+        })
+    }
+
+    return (
+    <><NavigateBar />
+        <section className="filosofia bg-primary text-center text-white" >
+            <div className="container">
+                <div className="row">
+                    <div className="col-12">
+                        <img src={GervaPhoto} alt="foto" width="260" height="auto"
+                        className="img-fluid rounded-circle my-3"/>
+                        <h2 className="mb-3"> About Me</h2>
+                        <p className="h3 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum corporis fugit 
+                            modi ipsam asperiores molestias, ut qui repudiandae architecto dolore quibusdam labore 
+                            exercitationem. Reprehenderit natus modi nesciunt aperiam repellat?</p>
+                        <p className="h4 font-italic">- Gervasio Riveiro</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section className='seccion1' id='myskills'>
+            <button className='myresume'>
+                <a href="https://f1backend.herokuapp.com/downloadcv" target="_blank">
+                    <FontAwesomeIcon icon={faFileArrowDown} className='downloadIcon' />
+                    My Resume
+                </a>
+            </button>
+            <h2 className='title2'>My Skills</h2>
+            <ul className='skills'>
+                <li className='skillicon'>
+                    <img src={HtmlIcon} className='imgicon'></img>
+                    HTML
+                </li>
+                <li className='skillicon'>
+                    <img src={CssIcon} className='imgicon'></img>
+                    CSS
+                </li>
+                <li className='skillicon'>
+                    <img src={DbIcon} className='imgicon'></img>
+                    MONGDB-MYSQL
+                </li>
+                <li className='skillicon3'>
+                    <img src={NodeIcon} className='imgicon'></img>
+                    NODEJS
+                </li>
+                <li className='skillicon'>
+                    <img src={JsIcon} className='imgicon'></img>
+                    JAVASCRIPT
+                </li>
+                <li className='skillicon2'>
+                    <img src={ReactIcon} className='imgicon'></img>
+                    React
+                </li>
+            </ul>
+        </section><section className='seccion2' id='mywork'>
+                <h2 className='title2'>My Work</h2>
+                <ul className='worklist'>
+                    <li className='work'>
+                        <h3>Api For F1</h3>
+                        <a href="https://f1-gervaproyect.herokuapp.com" target="_blank">
+                            <img src={F1Img} className='WorkImg'></img>
+                            <p>A MERN (mongodb, express, nodejs) proyect about Formula 1 in 2022</p>
+                        </a>
+                    </li>
+                    <li className='work'>
+                        <h3>Website for turistic farm</h3>
+                        <a href="https://chacra-gervaproyect.herokuapp.com" target="_blank">
+                            <img src={FarmImg} className='WorkImg'></img>
+                            <p>A full nodejs proyect about a turistic proyect</p>
+                        </a>
+                    </li>
+                </ul>
+            </section><h2 className='title2' id='talk'>Let`s Talk</h2><ul className='redes'>
+                <li className=''>
+                    <a href='https://www.linkedin.com/in/gervasio-riveiro-martínez-36a8b0234/' target="_blank">
+                        <img src={LinkedIcon} className='imgicon'></img>
+                    </a>
+                </li>
+                <li className=''>
+                    <a href='https://www.facebook.com/gervasio.riveiro/' target="_blank">
+                        <img src={FaceIcon} className='imgicon'></img>
+                    </a>
+                </li>
+                <li className=''>
+                    <a href='https://github.com/gervariveiro' target="_blank">
+                        <img src={GitHubIcon} className='imgicon'></img>
+                    </a>
+                </li>
+                <li className=''>
+                    <a href='https://www.twitch.tv/rashgaminguy/' target="_blank">
+                        <img src={TwitchIcon} className='imgicon'></img>
+                    </a>
+                </li>
+            </ul><form className='formcontact' action="https://f1backend.herokuapp.com/send-emailportfolio" method="POST">
+                <label>
+                    Name:
+                    <input type="text" name="name" placeholder='Name' />
+                </label>
+                <label>
+                    Email:
+                    <input type="text" name="email" placeholder='Email' />
+                </label>
+                <label className='labelMessage'>
+                    Menssage:
+                    <textarea className='mensaje' type="text" name="message" placeholder='Write your message' />
+                </label>
+                <button className='buttonsend' type="submit" value="Enviar" onClick={() => mostrarAlert()}>Send</button>
+            </form></>
+                
+
+    )
+
+}
+
+export default Home;

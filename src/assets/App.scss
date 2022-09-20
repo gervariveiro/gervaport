@@ -1,0 +1,52 @@
+/*.encabezado{
+    display:flex;
+    background-image: linear-gradient(red,blue);
+    justify-content: center;
+}*/
+
+$principal: rgb(9, 136, 119);
+$secondary: yellow;
+$success:green;
+$danger:red;
+$dark:rgba(134, 134, 134, 0.555);
+$texto:#44484a;
+//estilos de prueba
+
+body{
+    height: 800px;
+    color: $texto;
+}
+
+html{
+    font-size: 13px;
+}
+
+
+.card:hover{
+    box-shadow: 0 0 10px $dark;
+}
+
+.bg-primary{
+    background-color: $principal !important;
+}
+
+.text-primary{
+   color: $principal !important;
+}
+
+.btn-primary{
+    background-color: $principal !important;
+    border-color:darken($principal,15%) !important;
+ }
+
+ .btn-primary:hover,
+ .btn-primary:focus
+ {
+    background-color: darken($principal,8%) !important;
+    box-shadow: 0 0 0 0.2rem rgba($principal,.5) !important;
+ }
+
+ .btn-primary:active {
+    background-color: darken($principal,8%) !important;
+    border-color:darken($principal,20%) !important;
+ }
