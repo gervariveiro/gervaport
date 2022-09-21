@@ -9,10 +9,9 @@ body {
 
 html {
   font-size: 13px; }
- 
-.filosofia{
-    margin-top: 100px;
-  }
+
+.filosofia {
+  margin-top: 100px; }
 
 .card:hover {
   -webkit-box-shadow: 0 0 10px rgba(134, 134, 134, 0.555);
@@ -20,6 +19,9 @@ html {
 
 .bg-primary {
   background-color: #098877 !important; }
+
+.bg-secondary {
+    background-color: #887f09 !important; }
 
 .text-primary {
   color: #098877 !important; }

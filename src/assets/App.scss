@@ -5,7 +5,7 @@
 }*/
 
 $principal: rgb(9, 136, 119);
-$secondary: yellow;
+$secondary: rgb(231, 231, 65);
 $success:green;
 $danger:red;
 $dark:rgba(134, 134, 134, 0.555);
@@ -19,6 +19,10 @@ body{
 
 html{
     font-size: 13px;
+}
+
+.filosofia{
+    margin-top: 100px;
 }
 
 

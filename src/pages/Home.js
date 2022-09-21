@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import NavigateBar from '../components/Navbar.js';
 import GervaPhoto from '../assets/gervaphoto1.jpg';
 import HtmlIcon from '../assets/htmlicon.png';
@@ -46,6 +47,7 @@ function Home () {
                             modi ipsam asperiores molestias, ut qui repudiandae architecto dolore quibusdam labore 
                             exercitationem. Reprehenderit natus modi nesciunt aperiam repellat?</p>
                         <p className="h4 font-italic">- Gervasio Riveiro</p>
+                        <Button variant="secondary" href="#">My Resume</Button>
                     </Col>
                 </Row>
             </Container>
