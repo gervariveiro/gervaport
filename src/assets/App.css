@@ -1,8 +1,3 @@
-/*.encabezado{
-    display:flex;
-    background-image: linear-gradient(red,blue);
-    justify-content: center;
-}*/
 body {
   height: 800px;
   color: #44484a; }
@@ -21,7 +16,7 @@ html {
   background-color: #098877 !important; }
 
 .bg-secondary {
-    background-color: #887f09 !important; }
+  background-color: #e7e741 !important; }
 
 .text-primary {
   color: #098877 !important; }

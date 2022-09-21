@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import NavigateBar from '../components/Navbar.js';
 import GervaPhoto from '../assets/gervaphoto1.jpg';
@@ -34,6 +35,7 @@ function Home () {
 
     return (
     <><NavigateBar />
+
         <section className="filosofia py-4 bg-primary text-center text-white fluid" >
             <Container fluid>
                 <Row>
@@ -42,12 +44,45 @@ function Home () {
                         className="img-fluid rounded-circle my-3 mb-4"/>
                     </Col>
                     <Col className="col-12 text-center">
-                        <h2 className="mb-3"> About Me</h2>
-                        <p className="h3 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum corporis fugit 
+                        <h3 className="mb-3"> About Me</h3>
+                        <p className="h5 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum corporis fugit 
                             modi ipsam asperiores molestias, ut qui repudiandae architecto dolore quibusdam labore 
                             exercitationem. Reprehenderit natus modi nesciunt aperiam repellat?</p>
-                        <p className="h4 font-italic">- Gervasio Riveiro</p>
-                        <Button variant="secondary" href="#">My Resume</Button>
+                        <p className="h4 pb-2">- Gervasio Riveiro</p>
+                        <Button variant="primary" size="lg" href="#">My Resume</Button>
+                    </Col>
+                </Row>
+            </Container>
+        </section>
+
+        <section>
+            <Container>
+                <Row classname="text-md-center">
+                    <h2>My Work</h2>
+                    <Col col md={4} className="mb-3 mb-lg-0">
+                        <Card>
+                            <Card.Img variant="top" src={F1Img} alt="f1imagen"/>
+                            <div className="card-body">
+                                <Card.Title>API for F1</Card.Title>
+                                <Card.Text>A MERN Stack proyect about Formula 1 in 2022.</Card.Text>
+                                <a href="https://f1-gervaproyect.herokuapp.com/" className="btn btn-primary">Link to Website</a>
+                            </div>
+                        </Card>
+                    </Col>
+                </Row>
+            </Container>
+
+            <Container>
+                <Row classname="text-md-center">
+                <Col col md={4} className="mb-3 mb-lg-0">
+                        <Card>
+                            <Card.Img variant="top" src={FarmImg} alt="f1imagen"/>
+                            <div className="card-body">
+                                <Card.Title>Website for turistic farm</Card.Title>
+                                <Card.Text>A full nodejs proyect about a turistic proyect.</Card.Text>
+                                <a href="https://chacra-gervaproyect.herokuapp.com" className="btn btn-primary">Link to Website</a>
+                            </div>
+                        </Card>
                     </Col>
                 </Row>
             </Container>
@@ -56,7 +91,7 @@ function Home () {
 
 
 <section className='seccion2' id='mywork'>
-                <h2 className='title2'>My Work</h2>
+                
                 <ul className='worklist'>
                     <li className='work'>
                         <h3>Api For F1</h3>
