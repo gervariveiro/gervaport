@@ -1,4 +1,7 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import NavigateBar from '../components/Navbar.js';
 import GervaPhoto from '../assets/gervaphoto1.jpg';
 import HtmlIcon from '../assets/htmlicon.png';
@@ -30,21 +33,45 @@ function Home () {
 
     return (
     <><NavigateBar />
-        <section className="filosofia bg-primary text-center text-white" >
-            <div className="container">
-                <div className="row">
-                    <div className="col-12">
+        <section className="filosofia py-4 bg-primary text-center text-white fluid" >
+            <Container fluid>
+                <Row>
+                    <Col>
                         <img src={GervaPhoto} alt="foto" width="260" height="auto"
-                        className="img-fluid rounded-circle my-3"/>
+                        className="img-fluid rounded-circle my-3 mb-4"/>
+                    </Col>
+                    <Col className="col-12 text-center">
                         <h2 className="mb-3"> About Me</h2>
                         <p className="h3 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum corporis fugit 
                             modi ipsam asperiores molestias, ut qui repudiandae architecto dolore quibusdam labore 
                             exercitationem. Reprehenderit natus modi nesciunt aperiam repellat?</p>
                         <p className="h4 font-italic">- Gervasio Riveiro</p>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
         </section>
+
+
+
+<section className='seccion2' id='mywork'>
+                <h2 className='title2'>My Work</h2>
+                <ul className='worklist'>
+                    <li className='work'>
+                        <h3>Api For F1</h3>
+                        <a href="https://f1-gervaproyect.herokuapp.com" target="_blank">
+                            <img src={F1Img} className='WorkImg'></img>
+                            <p>A MERN (mongodb, express, nodejs) proyect about Formula 1 in 2022</p>
+                        </a>
+                    </li>
+                    <li className='work'>
+                        <h3>Website for turistic farm</h3>
+                        <a href="https://chacra-gervaproyect.herokuapp.com" target="_blank">
+                            <img src={FarmImg} className='WorkImg'></img>
+                            <p>A full nodejs proyect about a turistic proyect</p>
+                        </a>
+                    </li>
+                </ul>
+</section>
         
         <section className='seccion1' id='myskills'>
             <button className='myresume'>
@@ -80,25 +107,9 @@ function Home () {
                     React
                 </li>
             </ul>
-        </section><section className='seccion2' id='mywork'>
-                <h2 className='title2'>My Work</h2>
-                <ul className='worklist'>
-                    <li className='work'>
-                        <h3>Api For F1</h3>
-                        <a href="https://f1-gervaproyect.herokuapp.com" target="_blank">
-                            <img src={F1Img} className='WorkImg'></img>
-                            <p>A MERN (mongodb, express, nodejs) proyect about Formula 1 in 2022</p>
-                        </a>
-                    </li>
-                    <li className='work'>
-                        <h3>Website for turistic farm</h3>
-                        <a href="https://chacra-gervaproyect.herokuapp.com" target="_blank">
-                            <img src={FarmImg} className='WorkImg'></img>
-                            <p>A full nodejs proyect about a turistic proyect</p>
-                        </a>
-                    </li>
-                </ul>
-            </section><h2 className='title2' id='talk'>Let`s Talk</h2><ul className='redes'>
+        </section>
+
+        <h2 className='title2' id='talk'>Let`s Talk</h2><ul className='redes'>
                 <li className=''>
                     <a href='https://www.linkedin.com/in/gervasio-riveiro-martínez-36a8b0234/' target="_blank">
                         <img src={LinkedIcon} className='imgicon'></img>
