@@ -49,7 +49,10 @@ function Home () {
                             modi ipsam asperiores molestias, ut qui repudiandae architecto dolore quibusdam labore 
                             exercitationem. Reprehenderit natus modi nesciunt aperiam repellat?</p>
                         <p className="h4 pb-2">- Gervasio Riveiro</p>
-                        <Button variant="primary" size="lg" href="#">My Resume</Button>
+                        <Button variant="primary" size="lg" href="https://f1backend.herokuapp.com/downloadcv">
+                            My Resume
+                            <FontAwesomeIcon icon={faFileArrowDown} className='downloadIcon' />
+                        </Button>
                     </Col>
                 </Row>
             </Container>

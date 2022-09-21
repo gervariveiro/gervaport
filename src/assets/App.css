@@ -12,12 +12,6 @@ html {
   -webkit-box-shadow: 0 0 10px rgba(134, 134, 134, 0.555);
           box-shadow: 0 0 10px rgba(134, 134, 134, 0.555); }
 
-.bg-primary {
-  background-color: #098877 !important; }
-
-.bg-secondary {
-  background-color: #e7e741 !important; }
-
 .text-primary {
   color: #098877 !important; }
 
