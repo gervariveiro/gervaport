@@ -49,7 +49,7 @@ function Home () {
                             modi ipsam asperiores molestias, ut qui repudiandae architecto dolore quibusdam labore 
                             exercitationem. Reprehenderit natus modi nesciunt aperiam repellat?</p>
                         <p className="h4 pb-2">- Gervasio Riveiro</p>
-                        <Button variant="primary" size="lg" href="https://f1backend.herokuapp.com/downloadcv">
+                        <Button variant="secondary" size="lg" href="https://f1backend.herokuapp.com/downloadcv">
                             My Resume
                             <FontAwesomeIcon icon={faFileArrowDown} className='downloadIcon' />
                         </Button>
@@ -87,40 +87,41 @@ function Home () {
         </section>
 
         
-        <section className='seccion1' id='myskills'>
-            <button className='myresume'>
-                <a href="https://f1backend.herokuapp.com/downloadcv" target="_blank">
-                    <FontAwesomeIcon icon={faFileArrowDown} className='downloadIcon' />
-                    My Resume
-                </a>
-            </button>
-            <h2 className='title2'>My Skills</h2>
-            <ul className='skills'>
-                <li className='skillicon'>
-                    <img src={HtmlIcon} className='imgicon'></img>
-                    HTML
-                </li>
-                <li className='skillicon'>
-                    <img src={CssIcon} className='imgicon'></img>
-                    CSS
-                </li>
-                <li className='skillicon'>
-                    <img src={DbIcon} className='imgicon'></img>
-                    MONGDB-MYSQL
-                </li>
-                <li className='skillicon3'>
-                    <img src={NodeIcon} className='imgicon'></img>
-                    NODEJS
-                </li>
-                <li className='skillicon'>
-                    <img src={JsIcon} className='imgicon'></img>
-                    JAVASCRIPT
-                </li>
-                <li className='skillicon2'>
-                    <img src={ReactIcon} className='imgicon'></img>
-                    React
-                </li>
-            </ul>
+        <section id='myskills'>
+            <h2>My Skills</h2>
+            <Container>
+                <Row>
+                    <Col>
+                        <ul>
+                            <li>
+                                <img src={HtmlIcon}></img>
+                                HTML
+                            </li>
+                            <li>
+                                <img src={CssIcon}></img>
+                                CSS
+                            </li>
+                            <li>
+                                <img src={DbIcon}></img>
+                                MONGDB-MYSQL
+                            </li>
+                            <li>
+                                <img src={NodeIcon}></img>
+                                NODEJS
+                            </li>
+                            <li>
+                                <img src={JsIcon}></img>
+                                JAVASCRIPT
+                            </li>
+                            <li>
+                                <img src={ReactIcon}></img>
+                                React
+                            </li>
+                        </ul>
+                    </Col>
+                </Row>
+            </Container>
+            
         </section>
 
         <h2 className='title2' id='talk'>Let`s Talk</h2><ul className='redes'>
