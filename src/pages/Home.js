@@ -36,7 +36,7 @@ function Home () {
     return (
     <><NavigateBar />
 
-        <section className="filosofia py-4 bg-primary text-center text-white fluid" >
+        <section className="filosofia py-4 bg-primary text-center text-white fluid" id="#aboutme">
             <Container fluid>
                 <Row>
                     <Col>
@@ -56,10 +56,10 @@ function Home () {
         </section>
 
         <section>
-            <Container>
+            <Container className="m-5">
                 <Row classname="text-md-center">
-                    <h2>My Work</h2>
-                    <Col col md={4} className="mb-3 mb-lg-0">
+                    <h3 className="mb-4">My Work</h3>
+                    <Col col md={6} className="mb-3 mb-lg-0">
                         <Card>
                             <Card.Img variant="top" src={F1Img} alt="f1imagen"/>
                             <div className="card-body">
@@ -69,7 +69,7 @@ function Home () {
                             </div>
                         </Card>
                     </Col>
-                    <Col col md={4} className="mb-3 mb-lg-0">
+                    <Col col md={6} className="mb-3 mb-lg-0">
                         <Card>
                             <Card.Img variant="top" src={FarmImg} alt="f1imagen"/>
                             <div className="card-body">
@@ -83,27 +83,6 @@ function Home () {
             </Container>
         </section>
 
-
-
-<section className='seccion2' id='mywork'>
-                
-                <ul className='worklist'>
-                    <li className='work'>
-                        <h3>Api For F1</h3>
-                        <a href="https://f1-gervaproyect.herokuapp.com" target="_blank">
-                            <img src={F1Img} className='WorkImg'></img>
-                            <p>A MERN (mongodb, express, nodejs) proyect about Formula 1 in 2022</p>
-                        </a>
-                    </li>
-                    <li className='work'>
-                        <h3>Website for turistic farm</h3>
-                        <a href="https://chacra-gervaproyect.herokuapp.com" target="_blank">
-                            <img src={FarmImg} className='WorkImg'></img>
-                            <p>A full nodejs proyect about a turistic proyect</p>
-                        </a>
-                    </li>
-                </ul>
-</section>
         
         <section className='seccion1' id='myskills'>
             <button className='myresume'>

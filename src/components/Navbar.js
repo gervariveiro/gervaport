@@ -11,7 +11,7 @@ function NavigateBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto h5">
-            <Nav.Link className="px-4" href="#home" >About Me</Nav.Link>
+            <Nav.Link className="px-4" href="aboutme" >About Me</Nav.Link>
             <Nav.Link className="px-4" href="#link">My Work</Nav.Link>
             <Nav.Link className="px-4" href="#link">My Work</Nav.Link>
             <Nav.Link className="px-4" href="#link">My Skills</Nav.Link>
