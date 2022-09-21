@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image';
 import NavigateBar from '../components/Navbar.js';
 import GervaPhoto from '../assets/gervaphoto1.jpg';
 import HtmlIcon from '../assets/htmlicon.png';
@@ -40,7 +41,7 @@ function Home () {
             <Container fluid>
                 <Row>
                     <Col>
-                        <img src={GervaPhoto} alt="foto" width="260" height="auto"
+                        <Image src={GervaPhoto} alt="foto" width="260" height="auto"
                         className="img-fluid rounded-circle my-3 mb-4"/>
                     </Col>
                     <Col className="col-12 text-center">
@@ -91,7 +92,7 @@ function Home () {
             <h2>My Skills</h2>
             <Container>
                 <Row>
-                    <Col>
+                    <Col col md={4}>
                         <ul>
                             <li>
                                 <img src={HtmlIcon}></img>
