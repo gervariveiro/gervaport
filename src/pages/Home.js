@@ -69,12 +69,7 @@ function Home () {
                             </div>
                         </Card>
                     </Col>
-                </Row>
-            </Container>
-
-            <Container>
-                <Row classname="text-md-center">
-                <Col col md={4} className="mb-3 mb-lg-0">
+                    <Col col md={4} className="mb-3 mb-lg-0">
                         <Card>
                             <Card.Img variant="top" src={FarmImg} alt="f1imagen"/>
                             <div className="card-body">
