@@ -88,38 +88,39 @@ function Home () {
         </section>
 
         
-        <section id='myskills'>
-            <h2>My Skills</h2>
+        <section>
+            <h3 className="m-5">My Skills</h3>
             <Container>
-                <Row>
-                    <Col col md={4}>
-                        <ul>
+                <Row className='skillcontainer'>
+                    <Col>
+                        <ul className='skill'>
                             <li>
-                                <img src={HtmlIcon}></img>
+                                <img src={HtmlIcon} width="50" height="50"></img>
                                 HTML
                             </li>
                             <li>
-                                <img src={CssIcon}></img>
+                                <img src={CssIcon} width="50" height="50"></img>
                                 CSS
                             </li>
                             <li>
-                                <img src={DbIcon}></img>
+                                <img src={DbIcon} width="50" height="50"></img>
                                 MONGDB-MYSQL
                             </li>
                             <li>
-                                <img src={NodeIcon}></img>
+                                <img src={NodeIcon} width="50" height="50"></img>
                                 NODEJS
                             </li>
                             <li>
-                                <img src={JsIcon}></img>
+                                <img src={JsIcon} width="50" height="50"></img>
                                 JAVASCRIPT
                             </li>
                             <li>
-                                <img src={ReactIcon}></img>
+                                <img src={ReactIcon} width="50" height="50"></img>
                                 React
                             </li>
                         </ul>
                     </Col>
+                   
                 </Row>
             </Container>
             

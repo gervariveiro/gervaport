@@ -21,6 +21,15 @@ html{
     margin-top: 100px;
 }
 
+.skillcontainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.skill{
+    list-style-type: none;
+  }
 
 .card:hover{
     box-shadow: 0 0 10px $dark;

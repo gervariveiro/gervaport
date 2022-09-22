@@ -8,6 +8,20 @@ html {
 .filosofia {
   margin-top: 100px; }
 
+.skillcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.skill {
+  list-style-type: none; }
+
 .card:hover {
   -webkit-box-shadow: 0 0 10px rgba(134, 134, 134, 0.555);
           box-shadow: 0 0 10px rgba(134, 134, 134, 0.555); }
