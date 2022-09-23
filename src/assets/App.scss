@@ -1,7 +1,7 @@
 
 
 $principal: rgb(9, 136, 119);
-$secundario: rgb(231, 231, 65);
+$secundario: rgb(141, 182, 173);
 $success:green;
 $danger:red;
 $dark:rgba(134, 134, 134, 0.555);
@@ -60,3 +60,18 @@ html{
     background-color: darken($principal,8%) !important;
     border-color:darken($principal,20%) !important;
  }
+
+
+ /*light btn*/
+
+ .btn-light:hover,
+ .btn-light:focus
+ {
+    background-color: darken($secundario,8%) !important;
+    box-shadow: 0 0 0 0.2rem rgba($secundario,2) !important;
+ }
+
+
+
+
+ 

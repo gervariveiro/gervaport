@@ -46,4 +46,11 @@ html {
   background-color: #066256 !important;
   border-color: #032823 !important; }
 
+/*light btn*/
+.btn-light:hover,
+.btn-light:focus {
+  background-color: #74a69b !important;
+  -webkit-box-shadow: 0 0 0 0.2rem #8db6ad !important;
+          box-shadow: 0 0 0 0.2rem #8db6ad !important; }
+
 /*# sourceMappingURL=App.css.map */
