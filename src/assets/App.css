@@ -26,6 +26,12 @@ html {
   -webkit-box-shadow: 0 0 10px rgba(134, 134, 134, 0.555);
           box-shadow: 0 0 10px rgba(134, 134, 134, 0.555); }
 
+.formclass {
+  display: inline-block; }
+
+.textarea {
+  resize: none; }
+
 .bg-primary {
   background-color: #098877 !important; }
 

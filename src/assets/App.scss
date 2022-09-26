@@ -35,6 +35,14 @@ html{
     box-shadow: 0 0 10px $dark;
 }
 
+.formclass{
+    display: inline-block;
+}
+
+.textarea{
+    resize: none;
+}
+
 .bg-primary{
     background-color: $principal !important;
 }
