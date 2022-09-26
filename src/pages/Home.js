@@ -184,17 +184,17 @@ function Home () {
             <Form widht="250px" className="mx-5 formclass" action="https://f1backend.herokuapp.com/send-emailportfolio" method='POST'>
                 <Form.Group className="mb-3">
                     <h5>Name</h5>
-                    <Form.Control className="my-2 mx-4" placeholder="Enter name" />
+                    <Form.Control className="my-2 mx-4" type="text" name="name"  placeholder="Enter name" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <h5>Email</h5>
-                    <Form.Control className="my-2 mx-4"  type="email" placeholder="Enter email" />
+                    <Form.Control className="my-2 mx-4"  name="email" type="email" placeholder="Enter email" />
                 </Form.Group>
                 <Form.Group as={Col} id="formGridQuery">
                 <h5>Message</h5>
-                <Form.Control className="m-4 textarea" name="query" as="textarea" rows={3} />
+                <Form.Control className="m-4 textarea" type="text" name="message" rows={3} placeholder="Write your message"/>
                 </Form.Group>
-                <Button variant="primary" className='mx-4 my-3' type="submit">
+                <Button variant="primary" className='mx-4 my-3' type="submit" >
                     Send
                 </Button>
         </Form>
