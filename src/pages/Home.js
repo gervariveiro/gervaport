@@ -192,7 +192,8 @@ function Home () {
                 </Form.Group>
                 <Form.Group as={Col} id="formGridQuery">
                 <h5>Message</h5>
-                <Form.Control className="m-4 textarea" type="text" name="message" rows={3} placeholder="Write your message"/>
+                <textarea className="m-4 textarea" type="text" name="message" rows={3} placeholder="Write your message">
+                </textarea>
                 </Form.Group>
                 <Button variant="primary" className='mx-4 my-3' type="submit" >
                     Send
