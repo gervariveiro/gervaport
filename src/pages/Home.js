@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import NavigateBar from '../components/Navbar.js';
+import Form from 'react-bootstrap/Form';
 import GervaPhoto from '../assets/gervaphoto1.jpg';
 import HtmlIcon from '../assets/htmlicon.png';
 import CssIcon from '../assets/cssicon.png';
@@ -15,7 +16,6 @@ import ReactIcon from '../assets/reacticon.png';
 import JsIcon from '../assets/jsicon.png';
 import F1Img from '../assets/f1photo.jpg';
 import FarmImg from '../assets/farmphoto.jpg';
-import TwitchIcon from '../assets/twitchicon.png';
 import GitHubIcon from '../assets/githubicon.png';
 import FaceIcon from '../assets/faceicon.png';
 import LinkedIcon from '../assets/linkedicon.png';
@@ -91,7 +91,7 @@ function Home () {
         <section>
             <h3 className="m-5">My Skills</h3>
             <Container className='d-flex flex-row justify-content-md-adround'>
-                <Row >
+                <Row>
                     <Col col md={6}>
                         <ul className='skill'>
                             <li className='mb-4'>
@@ -140,34 +140,39 @@ function Home () {
         </section>
         <section>
             <h3 className="m-5">Contact Me</h3>
-            <Container>
-                <Row>
-                    <Col>
-                        <ul className='redes'>
-                            <li className=''>
+            <Container className='d-flex flex-row justify-content-md-adround'>
+                <Row className="mx-5">
+                    <Col md={6}>
+                        <ul className='skill'>
+                            <li className='mb-4'>
                             <a href='https://www.linkedin.com/in/gervasio-riveiro-martínez-36a8b0234/' target="_blank">
-                                <img src={LinkedIcon} className='imgicon'></img>
+                                <img src={LinkedIcon} className='imgicon' width="50" height="50"></img>
                             </a>
                         </li>
-                        <li className=''>
+                        <li className='mb-4'>
                             <a href='https://www.facebook.com/gervasio.riveiro/' target="_blank">
-                                <img src={FaceIcon} className='imgicon'></img>
+                                <img src={FaceIcon} className='imgicon' width="50" height="50"></img>
                             </a>
                         </li>
                         </ul>
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
-                        <ul>
-                            <li className=''>
+                    <Col md={6}>
+                        <ul className='skill'>
+                            <li className='mb-4'>
                                 <a href='https://github.com/gervariveiro' target="_blank">
-                                    <img src={GitHubIcon} className='imgicon'></img>
+                                    <img src={GitHubIcon} className='imgicon' width="50" height="50"></img>
                                 </a>
                             </li>
-                            <li className=''>
-                                <a href='https://www.twitch.tv/rashgaminguy/' target="_blank">
-                                    <img src={TwitchIcon} className='imgicon'></img>
+                            <li className='mb-4'>
+                                <a href='https://soundcloud.com/gerva14' target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#042C4B"  class="bi bi-music-note-list" viewBox="0 0 16 16">
+                                        <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                                        <path fill-rule="evenodd" d="M12 3v10h-1V3h1z"/>
+                                        <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"/>
+                                        <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+                                    </svg>
                                 </a>
                             </li>
                         </ul>
@@ -175,6 +180,22 @@ function Home () {
                 </Row>
                     
             </Container>
+            <Form className="mx-5">
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <h5>Name</h5>
+                    <Form.Control class="in-line my-2 mx-4" type="email" placeholder="Enter email" />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <h5>email</h5>
+                    <Form.Control class="in-line my-2 mx-4" type="email" placeholder="Enter email" />
+                </Form.Group>
+                <Form.Text id="passwordHelpBlock" placeholder="Write a message">
+                    
+                </Form.Text>
+                <Button variant="primary" type="submit">
+                    Submit
+                </Button>
+        </Form>
         </section>
                 
                 <form className='formcontact' action="https://f1backend.herokuapp.com/send-emailportfolio" method="POST">
