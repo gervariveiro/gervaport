@@ -37,7 +37,7 @@ function Home () {
     return (
     <><NavigateBar />
 
-        <section className="filosofia py-4 bg-primary text-center text-white fluid" id="#aboutme">
+        <section className="filosofia py-4 bg-primary text-center text-white fluid" id="Home">
             <Container fluid>
                 <Row>
                     <Col>
@@ -58,7 +58,7 @@ function Home () {
             </Container>
         </section>
 
-        <section>
+        <section id="Mywork">
             <Container className="m-5">
                 <Row classname="text-md-center">
                     <h3 className="mb-4">My Work</h3>
@@ -87,7 +87,7 @@ function Home () {
         </section>
 
         
-        <section>
+        <section id="Myskills">
             <h3 className="m-5">My Skills</h3>
             <Container className='d-flex flex-row justify-content-md-adround'>
                 <Row>
@@ -137,7 +137,7 @@ function Home () {
             </Container>
             
         </section>
-        <section>
+        <section id="Myskills">
             <h3 className="m-5">Contact Me</h3>
             <Container className='d-flex flex-row justify-content-md-adround'>
                 <Row className="mx-5">
@@ -180,7 +180,7 @@ function Home () {
                     
             </Container>
             </section>
-            <section>
+            <section id="ContactMe">
             <Form widht="250px" className="mx-5 formclass" action="https://f1backend.herokuapp.com/send-emailportfolio" method='POST'>
                 <Form.Group className="mb-3">
                     <h5>Name</h5>

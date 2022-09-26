@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
+import {Link} from 'react-scroll';
 
 function NavigateBar() {
   return (
@@ -11,8 +11,12 @@ function NavigateBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto h5">
-            <Nav.Link className="px-4" href="#aboutme" >About Me</Nav.Link>
-            <Nav.Link className="px-4" href="#link">My Work</Nav.Link>
+            <Nav.Link className="px-4">
+              <Link to="Home">About Me</Link>
+            </Nav.Link>
+            <Nav.Link className="px-4">
+              <Link to="Mywork">About Me</Link>
+            </Nav.Link>
             <Nav.Link className="px-4" href="#link">My Work</Nav.Link>
             <Nav.Link className="px-4" href="#link">My Skills</Nav.Link>
             <Nav.Link className="px-4" href="#link">Contact Me</Nav.Link>
