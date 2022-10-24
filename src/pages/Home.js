@@ -58,12 +58,12 @@ function Home () {
             </Container>
         </section>
 
-        <section id="Mywork">
-            <Container className="m-5">
+        <section id="Mywork" className='mt-5'>
+            <Container className="my-5">
                 <Row classname="text-md-center">
-                    <h3 className="mb-4">My Work</h3>
-                    <Col col md={6} className="mb-3 mb-lg-0">
-                        <Card>
+                    <h3 className="m-5 d-flex justify-content-center">My Work</h3>
+                    <Col className="col-12 col-md-6 mb-3 mb-lg-0 d-flex justify-content-between">
+                        <Card className='mx-3'>
                             <Card.Img variant="top" src={F1Img} alt="f1imagen"/>
                             <div className="card-body">
                                 <Card.Title>API for F1</Card.Title>
@@ -72,8 +72,8 @@ function Home () {
                             </div>
                         </Card>
                     </Col>
-                    <Col col md={6} className="mb-3 mb-lg-0">
-                        <Card>
+                    <Col className="col-12 col-md-6 mt-3 mt-md-0 mb-3 mb-lg-0 d-flex justify-content-between">    
+                        <Card className='mx-3'>
                             <Card.Img variant="top" src={FarmImg} alt="f1imagen"/>
                             <div className="card-body">
                                 <Card.Title>Website for turistic farm</Card.Title>
@@ -87,84 +87,89 @@ function Home () {
         </section>
 
         
-        <section id="Myskills">
-            <h3 className="m-5">My Skills</h3>
-            <Container className='d-flex flex-row justify-content-md-adround'>
+        <section id="Myskills" className='mt-5'>
+            <h3 className="m-5 d-flex justify-content-center">My Skills</h3>
+            <br></br>
+            <Container>
                 <Row>
-                    <Col col md={6}>
-                        <ul className='skill'>
-                            <li className='mb-4'>
+                    <Col className='col-12 col-md-6 col-xl-3 d-flex justify-content-center justify-content-md-start'>
+                            <div className='mb-4 d-flex flex-column justify-content-center'>
                                 <img src={HtmlIcon} width="50" height="50"></img>
-                                HTML
-                            </li>
-                            <li className='mb-4'>
+                                <label className='text-center'>HTML</label>
+                            </div>
+                    </Col>
+                    <Col className='col-12 col-md-6 col-xl-3 d-flex justify-content-center justify-content-md-start'>        
+                            <div className='mb-4 d-flex flex-column justify-content-center'>
                                 <img src={CssIcon} width="50" height="50"></img>
-                                CSS
-                            </li>
-                            <li className='mb-4'>
-                                <img src={DbIcon} width="50" height="50"></img>
-                                MONGDB-MYSQL
-                            </li>
-                            <li className='mb-4'>
+                                <label className='text-center'>CSS</label>
+                            </div>
+                    </Col>
+                    <Col className='col-12 col-md-6 col-xl-3 d-flex justify-content-center justify-content-md-center'>
+                            <div className='mb-4 d-flex flex-column justify-content-center'>
+                                <img src={DbIcon} width="50" height="50" className='ms-4'></img>
+                                <label className='text-center'>MONGDB-MYSQL</label>
+                            </div>
+                    </Col>
+                    <Col className='col-12 col-md-6 col-xl-3 d-flex justify-content-center justify-content-md-end'>
+                            <div className='mb-4 d-flex flex-column justify-content-center'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#042C4B" className="bi bi-bootstrap-fill" viewBox="0 0 16 16">
                                     <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
                                     <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"/>
                                 </svg>
-                                Bootstrap
-                            </li>
-                        </ul>
+                                <label className='text-center'>Bootstrap</label>
+                            </div>
                     </Col>
                 </Row>
                 <Row>
-                    <Col col md={6}>
-                        <ul className='skill'>
-                            <li className='mb-4'>
+                    <Col className='col-12 col-md-4 d-flex justify-content-center'>
+                            <div className='mb-4 d-flex flex-column justify-content-center'>
                                 <img src={NodeIcon} width="50" height="50"></img>
-                                NODEJS
-                            </li>
-                            <li className='mb-4'>
+                                <label className='text-center'>NODEJS</label>
+                            </div>
+                    </Col>        
+                    <Col className='col-12 col-md-4 d-flex justify-content-center'>
+                            <div className='mb-4 d-flex flex-column justify-content-center'>
                                 <img src={JsIcon} width="50" height="50"></img>
-                                JAVASCRIPT
-                            </li>
-                            <li className='mb-4'>
+                                <label className='text-center'>JAVASCRIPT</label>
+                            </div>
+                    </Col>        
+                    <Col className='col-12 col-md-4 d-flex justify-content-center'>
+                            <div className='mb-4 d-flex flex-column justify-content-center'>
                                 <img src={ReactIcon} width="50" height="50"></img>
-                                React
-                            </li>
-                            
-                        </ul>
+                                <label className='text-center'>React</label>
+                            </div>
                     </Col>
                 </Row>
             </Container>
             
         </section>
-        <section id="Myskills">
-            <h3 className="m-5">Contact Me</h3>
-            <Container className='d-flex flex-row justify-content-md-adround'>
+        <section id="Myskills" className='mt-5'>
+            <h3 className="m-5 d-flex justify-content-center">Contact Me</h3>
+            <Container>
                 <Row className="mx-5">
-                    <Col md={6}>
-                        <ul className='skill'>
-                            <li className='mb-4'>
+                   <Col className='col-12 col-md-3 d-flex justify-content-center'>
+                            <div className='mb-4'>
                             <a href='https://www.linkedin.com/in/gervasio-riveiro-martínez-36a8b0234/' target="_blank">
                                 <img src={LinkedIcon} className='imgicon' width="50" height="50"></img>
                             </a>
-                        </li>
-                        <li className='mb-4'>
+                        </div>
+                    </Col>
+                    <Col className='col-12 col-md-3 d-flex justify-content-center'>
+                        <div className='mb-4'>
                             <a href='https://www.facebook.com/gervasio.riveiro/' target="_blank">
                                 <img src={FaceIcon} className='imgicon' width="50" height="50"></img>
                             </a>
-                        </li>
-                        </ul>
+                        </div>
                     </Col>
-                </Row>
-                <Row>
-                    <Col md={6}>
-                        <ul className='skill'>
-                            <li className='mb-4'>
+                    <Col className='col-12 col-md-3 d-flex justify-content-center'>
+                            <div className='mb-4'>
                                 <a href='https://github.com/gervariveiro' target="_blank">
                                     <img src={GitHubIcon} className='imgicon' width="50" height="50"></img>
                                 </a>
-                            </li>
-                            <li className='mb-4'>
+                            </div>
+                    </Col>
+                    <Col className='col-12 col-md-3 d-flex justify-content-center'>
+                            <div className='mb-4'>
                                 <a href='https://soundcloud.com/gerva14' target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#042C4B"  class="bi bi-music-note-list" viewBox="0 0 16 16">
                                         <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
@@ -173,33 +178,40 @@ function Home () {
                                         <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
                                     </svg>
                                 </a>
-                            </li>
-                        </ul>
+                            </div>
                     </Col>
                 </Row>
                     
             </Container>
             </section>
-            <section id="ContactMe">
-            <Form widht="250px" className="mx-5 formclass" action="https://f1backend.herokuapp.com/send-emailportfolio" method='POST'>
-                <Form.Group className="mb-3">
-                    <h5>Name</h5>
-                    <Form.Control className="my-2 mx-4" type="text" name="name"  placeholder="Enter name" />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <h5>Email</h5>
-                    <Form.Control className="my-2 mx-4"  name="email" type="email" placeholder="Enter email" />
-                </Form.Group>
-                <Form.Group as={Col} id="formGridQuery">
-                <h5>Message</h5>
-                <textarea className="m-4 textarea" type="text" name="message" rows={3} placeholder="Write your message">
-                </textarea>
-                </Form.Group>
-                <Button variant="primary" className='mx-4 my-3' type="submit" >
-                    Send
-                </Button>
-        </Form>
-        </section>
+            <br></br>
+            <br></br>
+            <Container id="ContactMe" className='container-fluid'>
+                <Row>
+                    <Col className='d-flex justify-content-center'>
+                        <Form  className="mx-5 formclass border border-success p-5"  action="https://f1backend.herokuapp.com/send-emailportfolio" method='POST'>
+                            <Form.Group className="mb-3">
+                                <h5>Name</h5>
+                                <Form.Control className="my-2 mx-4" type="text" name="name"  placeholder="Enter name" />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                <h5>Email</h5>
+                                <Form.Control className="my-2 mx-4"  name="email" type="email" placeholder="Enter email" />
+                            </Form.Group>
+                            <Form.Group as={Col} id="formGridQuery">
+                            <h5>Message</h5>
+                            <textarea className="m-4 textarea" type="text" name="message" rows={3} placeholder="Write your message">
+                            </textarea>
+                            </Form.Group>
+                            <Button variant="primary" className='mx-4 my-3' type="submit" >
+                                Send
+                            </Button>
+                    </Form>
+                </Col>
+            </Row>
+        </Container>
+        <br></br>
+        <br></br>
         
                 
         </>
