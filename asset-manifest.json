@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/gervasioriveiro/static/css/main.4362bee3.css",
+    "main.js": "/gervasioriveiro/static/js/main.68d20cd3.js",
+    "static/media/gervaphoto1.jpg": "/gervasioriveiro/static/media/gervaphoto1.cf672eaa9fc55efb831c.jpg",
+    "static/media/farmphoto.jpg": "/gervasioriveiro/static/media/farmphoto.8389a7c1a177f06fe540.jpg",
+    "static/media/mtgphoto.JPG": "/gervasioriveiro/static/media/mtgphoto.50b3d68f1f350d2dd147.JPG",
+    "static/media/reacticon.png": "/gervasioriveiro/static/media/reacticon.6f0877414b4cb2d28adb.png",
+    "static/media/nodeicon.png": "/gervasioriveiro/static/media/nodeicon.8391a5b2b79d1ecd987c.png",
+    "static/media/githubicon.png": "/gervasioriveiro/static/media/githubicon.f3d602ad8f5701b482de.png",
+    "static/media/dbicon.png": "/gervasioriveiro/static/media/dbicon.565df0a275523e496a47.png",
+    "static/media/faceicon.png": "/gervasioriveiro/static/media/faceicon.a9f5b9a5961c9c28aefe.png",
+    "static/media/cssicon.png": "/gervasioriveiro/static/media/cssicon.c82d6dce2e7293bf7d6f.png",
+    "static/media/htmlicon.png": "/gervasioriveiro/static/media/htmlicon.21e149d9b7a6d7296810.png",
+    "static/media/jsicon.png": "/gervasioriveiro/static/media/jsicon.96cc337ed1e9d353fd79.png",
+    "static/media/linkedicon.png": "/gervasioriveiro/static/media/linkedicon.1e4e8806029febd90dee.png",
+    "index.html": "/gervasioriveiro/index.html",
+    "main.4362bee3.css.map": "/gervasioriveiro/static/css/main.4362bee3.css.map",
+    "main.68d20cd3.js.map": "/gervasioriveiro/static/js/main.68d20cd3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4362bee3.css",
+    "static/js/main.68d20cd3.js"
+  ]
+}
