@@ -14,7 +14,7 @@ import DbIcon from '../assets/dbicon.png';
 import NodeIcon from '../assets/nodeicon.png';
 import ReactIcon from '../assets/reacticon.png';
 import JsIcon from '../assets/jsicon.png';
-import F1Img from '../assets/f1photo.jpg';
+import mtgphoto from '../assets/mtgphoto.JPG';
 import FarmImg from '../assets/farmphoto.jpg';
 import GitHubIcon from '../assets/githubicon.png';
 import FaceIcon from '../assets/faceicon.png';
@@ -64,11 +64,11 @@ function Home () {
                     <h3 className="m-5 d-flex justify-content-center">My Work</h3>
                     <Col className="col-12 col-md-6 mb-3 mb-lg-0 d-flex justify-content-between">
                         <Card className='mx-3'>
-                            <Card.Img variant="top" src={F1Img} alt="f1imagen"/>
+                            <Card.Img variant="top" src={mtgphoto} alt="f1imagen"/>
                             <div className="card-body">
-                                <Card.Title>API for F1</Card.Title>
-                                <Card.Text>A MERN Stack proyect about Formula 1 in 2022.</Card.Text>
-                                <a href="https://f1-gervaproyect.herokuapp.com/" className="btn btn-primary">Link to Website</a>
+                                <Card.Title>Searcher for magic the gathering</Card.Title>
+                                <Card.Text>A portfolio project. Using React and axios to query an external api.</Card.Text>
+                                <a href="https://gervariveiro.github.io/searchCards/" className="btn btn-primary" target='blank'>Link to Website</a>
                             </div>
                         </Card>
                     </Col>
