@@ -49,7 +49,7 @@ function Home () {
                         <p className="h5 mb-4">Hi how are you?
                         On this site you can see some of my work. I offer services in dynamic web site development for your business or tool for work with data.</p>
                         <p className="h4 pb-2">Gervasio Riveiro</p>
-                        <Button variant="light" size="lg" href="https://f1backend.herokuapp.com/downloadcv">
+                        <Button variant="light" size="lg" href="https://docs.google.com/document/d/1ix0AKkeUrvYWMWeyFKaQNKwm1S4gob3q/edit?usp=sharing&ouid=112491146640088670130&rtpof=true&sd=true">
                             My Resume
                             <FontAwesomeIcon icon={faFileArrowDown} className='downloadIcon' />
                         </Button>
@@ -78,7 +78,7 @@ function Home () {
                             <div className="card-body">
                                 <Card.Title>Website for turistic farm</Card.Title>
                                 <Card.Text>A full nodejs proyect about a turistic proyect.</Card.Text>
-                                <a href="https://chacra-gervaproyect.herokuapp.com" className="btn btn-primary">Link to Website</a>
+                                <a href="https://gervariveiro.github.io/chacra/index.html" className="btn btn-primary">Link to Website</a>
                             </div>
                         </Card>
                     </Col>
