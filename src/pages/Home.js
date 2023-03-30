@@ -15,6 +15,7 @@ import NodeIcon from '../assets/nodeicon.png';
 import ReactIcon from '../assets/reacticon.png';
 import JsIcon from '../assets/jsicon.png';
 import mtgphoto from '../assets/mtgphoto.JPG';
+import UXexample from '../assets/UX example.JPG';
 import FarmImg from '../assets/farmphoto.jpg';
 import GitHubIcon from '../assets/githubicon.png';
 import FaceIcon from '../assets/faceicon.png';
@@ -34,6 +35,8 @@ function Home () {
         })
     }
 
+//<FontAwesomeIcon icon={faFileArrowDown} className='downloadIcon' />
+
     return (
     <><NavigateBar />
 
@@ -49,9 +52,8 @@ function Home () {
                         <p className="h5 mb-4">Hi how are you?
                         On this site you can see some of my work. I offer services in dynamic web site development for your business or tool for work with data.</p>
                         <p className="h4 pb-2">Gervasio Riveiro</p>
-                        <Button variant="light" size="lg" href="https://docs.google.com/document/d/1ix0AKkeUrvYWMWeyFKaQNKwm1S4gob3q/edit?usp=sharing&ouid=112491146640088670130&rtpof=true&sd=true">
+                        <Button variant="light" size="lg" href="https://drive.google.com/file/d/1q0gpsJCnXn59TIsBw_FWUa3Iz1GgT5e_/view?usp=sharing">
                             My Resume
-                            <FontAwesomeIcon icon={faFileArrowDown} className='downloadIcon' />
                         </Button>
                     </Col>
                 </Row>
@@ -61,7 +63,17 @@ function Home () {
         <section id="Mywork" className='mt-5'>
             <Container className="my-5">
                 <Row classname="text-md-center">
-                    <h3 className="m-5 d-flex justify-content-center">My Work</h3>
+                    <h3 className="mb-5 d-flex justify-content-center">My Work</h3>
+                    <Col className="col-12 col-md-6 mb-3 mb-lg-0 d-flex justify-content-between">
+                        <Card className='mx-3'>
+                            <Card.Img variant="top" src={UXexample} alt="uximage"/>
+                            <div className="card-body">
+                                <Card.Title>UX UI Example</Card.Title>
+                                <Card.Text>A UX UI proyect for a comic searcher in Figma</Card.Text>
+                                <a href="https://www.figma.com/file/XTDkS25LfGEdodggc84qQu/Home-Page-for-Comic-Search-Concept?t=6ic0zbYHd0dLVt7Z-0" className="btn btn-primary" target='blank'>Link to Website</a>
+                            </div>
+                        </Card>
+                    </Col>
                     <Col className="col-12 col-md-6 mb-3 mb-lg-0 d-flex justify-content-between">
                         <Card className='mx-3'>
                             <Card.Img variant="top" src={mtgphoto} alt="f1imagen"/>
@@ -72,12 +84,14 @@ function Home () {
                             </div>
                         </Card>
                     </Col>
-                    <Col className="col-12 col-md-6 mt-3 mt-md-0 mb-3 mb-lg-0 d-flex justify-content-between">    
+                </Row>
+                <Row classname="text-md-center">
+                    <Col className="col-12 col-md-6 mt-3 mt-md-0 mb-3 my-lg-5 d-flex justify-content-between">    
                         <Card className='mx-3'>
                             <Card.Img variant="top" src={FarmImg} alt="f1imagen"/>
                             <div className="card-body">
                                 <Card.Title>Website for turistic farm</Card.Title>
-                                <Card.Text>A full nodejs proyect about a turistic proyect.</Card.Text>
+                                <Card.Text>Proyect with HTML, CSS and JS about a turistic proyect.</Card.Text>
                                 <a href="https://gervariveiro.github.io/chacra/index.html" className="btn btn-primary">Link to Website</a>
                             </div>
                         </Card>
