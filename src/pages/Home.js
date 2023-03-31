@@ -18,6 +18,7 @@ import mtgphoto from '../assets/mtgphoto.JPG';
 import UXexample from '../assets/UX example.JPG';
 import FarmImg from '../assets/farmphoto.jpg';
 import GitHubIcon from '../assets/githubicon.png';
+import mailIcon from '../assets/mailIcon.png';
 import FaceIcon from '../assets/faceicon.png';
 import LinkedIcon from '../assets/linkedicon.png';
 import swal from 'sweetalert';
@@ -184,6 +185,13 @@ function Home () {
                     </Col>
                     <Col className='col-12 col-md-3 d-flex justify-content-center'>
                             <div className='mb-4'>
+                                <a href='mailto:gervasioriveiro@gmail.com?Subject=Contacto' target="_blank">
+                                    <img src={mailIcon} className='imgicon' width="45" height="40"></img>
+                                </a>
+                            </div>
+                    </Col>
+                    <Col className='col-12 col-md-3 d-flex justify-content-center'>
+                            <div className='mb-4'>
                                 <a href='https://soundcloud.com/gerva14' target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#042C4B"  class="bi bi-music-note-list" viewBox="0 0 16 16">
                                         <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
@@ -200,7 +208,18 @@ function Home () {
             </section>
             <br></br>
             <br></br>
-            <Container id="ContactMe" className='container-fluid'>
+               
+        </>
+                
+
+    )
+
+}
+
+export default Home;
+
+
+/*<Container id="ContactMe" className='container-fluid'>
                 <Row>
                     <Col className='d-flex justify-content-center'>
                         <Form  className="mx-5 formclass border border-success p-5"  action="https://f1backend.herokuapp.com/send-emailportfolio" method='POST'>
@@ -225,14 +244,4 @@ function Home () {
             </Row>
         </Container>
         <br></br>
-        <br></br>
-        
-                
-        </>
-                
-
-    )
-
-}
-
-export default Home;
+        <br></br>*/
