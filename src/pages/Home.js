@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import NavigateBar from '../components/Navbar.js';
 import Form from 'react-bootstrap/Form';
-import GervaPhoto from '../assets/gervaphoto1.jpg';
+import GervaPhoto from '../assets/gervaphoto1.png';
 import HtmlIcon from '../assets/htmlicon.png';
 import CssIcon from '../assets/cssicon.png';
 import DbIcon from '../assets/dbicon.png';
