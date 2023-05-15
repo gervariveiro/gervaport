@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gervasioriveiro/static/css/main.4362bee3.css",
-    "main.js": "/gervasioriveiro/static/js/main.60991998.js",
+    "main.js": "/gervasioriveiro/static/js/main.5a86041d.js",
     "static/media/gervaphoto1.png": "/gervasioriveiro/static/media/gervaphoto1.6aca6be9197937ccf92e.png",
     "static/media/UX example.JPG": "/gervasioriveiro/static/media/UX example.159845d9680374f379f6.JPG",
     "static/media/farmphoto.jpg": "/gervasioriveiro/static/media/farmphoto.8389a7c1a177f06fe540.jpg",
@@ -17,10 +17,10 @@
     "static/media/linkedicon.png": "/gervasioriveiro/static/media/linkedicon.1e4e8806029febd90dee.png",
     "index.html": "/gervasioriveiro/index.html",
     "main.4362bee3.css.map": "/gervasioriveiro/static/css/main.4362bee3.css.map",
-    "main.60991998.js.map": "/gervasioriveiro/static/js/main.60991998.js.map"
+    "main.5a86041d.js.map": "/gervasioriveiro/static/js/main.5a86041d.js.map"
   },
   "entrypoints": [
     "static/css/main.4362bee3.css",
-    "static/js/main.60991998.js"
+    "static/js/main.5a86041d.js"
   ]
 }
