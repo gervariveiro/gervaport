@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import NavigateBar from '../components/Navbar.js';
+import PDF from '../assets/Resume_Gervasio_Riveiro.pdf';
 import Form from 'react-bootstrap/Form';
 import GervaPhoto from '../assets/gervaphoto1.png';
 import HtmlIcon from '../assets/htmlicon.png';
@@ -53,7 +54,7 @@ function Home () {
                         <p className="h5 mb-4">Hi how are you?
                         On this site you can see some of my work. I offer services in dynamic web site development for your business or tool for work with data.</p>
                         <p className="h4 pb-2">Gervasio Riveiro</p>
-                        <Button variant="light" size="lg" href="https://drive.google.com/file/d/1q0gpsJCnXn59TIsBw_FWUa3Iz1GgT5e_/view?usp=sharing">
+                        <Button variant="light" size="lg" href={PDF} download>
                             My Resume
                         </Button>
                     </Col>
@@ -158,7 +159,7 @@ function Home () {
             </Container>
             
         </section>
-        <section id="Myskills" className='mt-5'>
+        <section id="ContactMe" className='mt-5'>
             <h3 className="m-5 d-flex justify-content-center">Contact Me</h3>
             <Container>
                 <Row className="mx-5">
