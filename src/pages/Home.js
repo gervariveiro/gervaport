@@ -1,4 +1,4 @@
-import React from 'react';
+import {useRef} from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -23,19 +23,46 @@ import mailIcon from '../assets/mailIcon.png';
 import FaceIcon from '../assets/faceicon.png';
 import LinkedIcon from '../assets/linkedicon.png';
 import swal from 'sweetalert';
+import emailjs from '@emailjs/browser';
+import Arqua from '../assets/Arqua.JPG';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faFileArrowDown} from '@fortawesome/free-solid-svg-icons';
 
 
+
 function Home () {
 
-    const mostrarAlert = () => { 
+const mostrarAlert = () => { 
         swal({
             title: "Your message was sent",
             icon: "success",
-            button: "Close"
+            button: "Cerrar"
         })
     }
+
+const form = useRef();
+
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+
+      
+  
+      emailjs.sendForm('service_u8ectry', 'template_wej4hkl', form.current, 'Eae2Ggd3yvqItXhkG')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+
+          mostrarAlert();
+          
+          setTimeout(() => {
+            window.location.replace('https://arqua.com.uy/Contact')
+          }, 2000);
+        ;
+    };
+    
 
 //<FontAwesomeIcon icon={faFileArrowDown} className='downloadIcon' />
 
@@ -66,17 +93,18 @@ function Home () {
             <Container className="my-5">
                 <Row classname="text-md-center">
                     <h3 className="mb-5 d-flex justify-content-center">My Work</h3>
-                    <Col className="col-12 col-md-6 mb-3 mb-lg-0 d-flex justify-content-between">
+                    <Col className="col-12 col-md-6 mt-3 mt-md-0 mb-3 my-lg-5 d-flex justify-content-between">    
                         <Card className='mx-3'>
-                            <Card.Img variant="top" src={UXexample} alt="uximage"/>
+                            <Card.Img variant="top" src={Arqua} alt="f1imagen"/>
                             <div className="card-body">
-                                <Card.Title>UX UI Example</Card.Title>
-                                <Card.Text>A UX UI proyect for a comic searcher in Figma</Card.Text>
-                                <a href="https://www.figma.com/file/XTDkS25LfGEdodggc84qQu/Home-Page-for-Comic-Search-Concept?t=6ic0zbYHd0dLVt7Z-0" className="btn btn-primary" target='blank'>Link to Website</a>
+                                <Card.Title>Arqua</Card.Title>
+                                <Card.Text>A web sit developed for ARQUA "Arquéologos del Uruguay Asociados".</Card.Text>
+                                <a href="https://www.arqua.com.uy" className="btn btn-primary">Link to Website</a>
                             </div>
                         </Card>
                     </Col>
-                    <Col className="col-12 col-md-6 mb-3 mb-lg-0 d-flex justify-content-between">
+                    
+                    <Col className="col-12 col-md-6 mt-3 mt-md-0 mb-3 my-lg-5 d-flex justify-content-between">   
                         <Card className='mx-3'>
                             <Card.Img variant="top" src={mtgphoto} alt="f1imagen"/>
                             <div className="card-body">
@@ -88,7 +116,7 @@ function Home () {
                     </Col>
                 </Row>
                 <Row classname="text-md-center">
-                    <Col className="col-12 col-md-6 mt-3 mt-md-0 mb-3 my-lg-5 d-flex justify-content-between">    
+                    <Col className="col-12 col-md-6 mt-3 mt-md-0 mb-3 my-lg-5 d-flex justify-content-between">  
                         <Card className='mx-3'>
                             <Card.Img variant="top" src={FarmImg} alt="f1imagen"/>
                             <div className="card-body">
@@ -98,6 +126,17 @@ function Home () {
                             </div>
                         </Card>
                     </Col>
+                    <Col className="col-12 col-md-6 mt-3 mt-md-0 mb-3 my-lg-5 d-flex justify-content-between">  
+                        <Card className='mx-3'>
+                            <Card.Img variant="top" src={UXexample} alt="uximage"/>
+                            <div className="card-body">
+                                <Card.Title>UX UI Example</Card.Title>
+                                <Card.Text>A UX UI proyect for a comic searcher in Figma</Card.Text>
+                                <a href="https://www.figma.com/file/XTDkS25LfGEdodggc84qQu/Home-Page-for-Comic-Search-Concept?t=6ic0zbYHd0dLVt7Z-0" className="btn btn-primary" target='blank'>Link to Website</a>
+                            </div>
+                        </Card>
+                    </Col>
+                    
                 </Row>
             </Container>
         </section>
@@ -204,7 +243,30 @@ function Home () {
                             </div>
                     </Col>
                 </Row>
-                    
+                <Container id="ContactMe" className='container-fluid'>
+                <Row>
+                    <Col className='d-flex justify-content-center'>
+                        <form  className="mx-5 formclass border border-success p-5" ref={form} onSubmit={sendEmail}>
+                            <Form.Group className="mb-3">
+                                <h5>Name</h5>
+                                <Form.Control className="my-2 mx-4" type="text" name="name"  placeholder="Enter name" />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                <h5>Email</h5>
+                                <Form.Control className="my-2 mx-4"  name="email" type="email" placeholder="Enter email" />
+                            </Form.Group>
+                            <Form.Group as={Col} id="formGridQuery">
+                            <h5>Message</h5>
+                            <textarea className="m-4 textarea" type="text" name="message" rows={3} placeholder="Write your message">
+                            </textarea>
+                            </Form.Group>
+                            <Button variant="primary" className='mx-4 my-3' type="submit" onClick={() => mostrarAlert()} >
+                                Send
+                            </Button>
+                    </form>
+                </Col>
+            </Row>
+        </Container> 
             </Container>
             </section>
             <br></br>
