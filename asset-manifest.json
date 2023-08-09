@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/gervasioriveiro/static/css/main.4362bee3.css",
-    "main.js": "/gervasioriveiro/static/js/main.fdaef1cb.js",
+    "main.js": "/gervasioriveiro/static/js/main.037544d7.js",
     "static/media/gervaphoto1.png": "/gervasioriveiro/static/media/gervaphoto1.6aca6be9197937ccf92e.png",
     "static/media/Resume_Gervasio_Riveiro.pdf": "/gervasioriveiro/static/media/Resume_Gervasio_Riveiro.b8ea403bf996f4361958.pdf",
     "static/media/UX example.JPG": "/gervasioriveiro/static/media/UX example.159845d9680374f379f6.JPG",
+    "static/media/Arqua.JPG": "/gervasioriveiro/static/media/Arqua.243d5d71770433acd1a5.JPG",
     "static/media/farmphoto.jpg": "/gervasioriveiro/static/media/farmphoto.8389a7c1a177f06fe540.jpg",
     "static/media/mtgphoto.JPG": "/gervasioriveiro/static/media/mtgphoto.50b3d68f1f350d2dd147.JPG",
     "static/media/reacticon.png": "/gervasioriveiro/static/media/reacticon.6f0877414b4cb2d28adb.png",
@@ -18,10 +19,10 @@
     "static/media/linkedicon.png": "/gervasioriveiro/static/media/linkedicon.1e4e8806029febd90dee.png",
     "index.html": "/gervasioriveiro/index.html",
     "main.4362bee3.css.map": "/gervasioriveiro/static/css/main.4362bee3.css.map",
-    "main.fdaef1cb.js.map": "/gervasioriveiro/static/js/main.fdaef1cb.js.map"
+    "main.037544d7.js.map": "/gervasioriveiro/static/js/main.037544d7.js.map"
   },
   "entrypoints": [
     "static/css/main.4362bee3.css",
-    "static/js/main.fdaef1cb.js"
+    "static/js/main.037544d7.js"
   ]
 }
