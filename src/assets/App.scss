@@ -1,85 +1,78 @@
-
-
 $principal: rgb(9, 136, 119);
 $secundario: rgb(141, 182, 173);
-$success:green;
-$danger:red;
-$dark:rgba(134, 134, 134, 0.555);
-$texto:#44484a;
+$success: green;
+$danger: red;
+$dark: rgba(134, 134, 134, 0.555);
+$texto: #44484a;
 
 
-body{
+body {
     height: 800px;
     color: $texto;
+
 }
 
-html{
+html {
     font-size: 13px;
+    animation: fade-in 1.5s ease-in !important;
 }
 
-.filosofia{
+.filosofia {
     margin-top: 100px;
 }
 
-.skillcontainer{
+.skillcontainer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
-.skill{
+.skill {
     list-style-type: none;
-  }
+}
 
-.card:hover{
+.card:hover {
     box-shadow: 0 0 10px $dark;
 }
 
-.formclass{
+.formclass {
     display: inline-block;
 }
 
-.textarea{
+.textarea {
     resize: none;
 }
 
-.bg-primary{
-    background-color: $principal !important;
+.bg-primary {
+    background-color: $principal  !important;
 }
 
 
-.text-primary{
-   color: $principal !important;
+.text-primary {
+    color: $principal  !important;
 }
 
-.btn-primary{
-    background-color: $principal !important;
-    border-color:darken($principal,15%) !important;
- }
+.btn-primary {
+    background-color: $principal  !important;
+    border-color: darken($principal, 15%) !important;
+}
 
- .btn-primary:hover,
- .btn-primary:focus
- {
-    background-color: darken($principal,8%) !important;
-    box-shadow: 0 0 0 0.2rem rgba($principal,.5) !important;
- }
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: darken($principal, 8%) !important;
+    box-shadow: 0 0 0 0.2rem rgba($principal, .5) !important;
+}
 
- .btn-primary:active {
-    background-color: darken($principal,8%) !important;
-    border-color:darken($principal,20%) !important;
- }
-
-
- /*light btn*/
-
- .btn-light:hover,
- .btn-light:focus
- {
-    background-color: darken($secundario,8%) !important;
-    box-shadow: 0 0 0 0.2rem rgba($secundario,2) !important;
- }
+.btn-primary:active {
+    background-color: darken($principal, 8%) !important;
+    border-color: darken($principal, 20%) !important;
+}
 
 
+/*light btn*/
 
-
- 
+.btn-light:hover,
+.btn-light:focus {
+    background-color: darken($secundario, 8%) !important;
+    box-shadow: 0 0 0 0.2rem rgba($secundario, 2) !important;
+}

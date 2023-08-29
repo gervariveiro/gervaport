@@ -69,37 +69,38 @@ const form = useRef();
     return (
     <><NavigateBar />
 
-        <section className="filosofia py-4 bg-primary text-center text-white fluid" id="Home">
-            <Container fluid>
-                <Row>
-                    <Col>
+            <Container className='filosofia d-flex flex-row bg-primary text-white p-5'>
+                <Row className=''>
+                    <Col className='d-flex flex-column col-12 col-md-6'>
                         <Image src={GervaPhoto} alt="foto" width="260" height="auto"
-                        className="img-fluid rounded-circle my-3 mb-4"/>
+                        className="rounded-circle align-self-center"/>
                     </Col>
-                    <Col className="col-12 text-center">
-                        <h3 className="mb-3"> About Me</h3>
-                        <p className="h5 mb-4">Hi how are you?
-                        On this site you can see some of my work. I offer services in dynamic web site development for your business or tool for work with data.</p>
-                        <p className="h4 pb-2">Gervasio Riveiro</p>
-                        <Button variant="light" size="lg" href={PDF} download>
-                            My Resume
-                        </Button>
+                    <Col className="d-flex flex-column justify-content-center col-12 col-md-6 text-start">
+                        <h3 className="mb-4">Hi!</h3>
+                        <p className="h5">How are you?
+                            On this site you can see some of my work. I offer services in dynamic web site development for your business or work with data processing.</p>
+                        <p className="h5 mt-3">Gervasio Riveiro</p>
+                        <a className="btn btn-light align-self-start d-inline mt-5" variant="light" size="lg" href={PDF} download>
+                        RESUME
+                    </a>
                     </Col>
+                    
                 </Row>
             </Container>
-        </section>
+           
+        
 
         <section id="Mywork" className='mt-5'>
             <Container className="my-5">
                 <Row classname="text-md-center">
-                    <h3 className="mb-5 d-flex justify-content-center">My Work</h3>
+                    <h2 className="mb-1 mt-5 d-flex justify-content-center">WORK</h2>
                     <Col className="col-12 col-md-6 mt-3 mt-md-0 mb-3 my-lg-5 d-flex justify-content-between">    
                         <Card className='mx-3'>
                             <Card.Img variant="top" src={Arqua} alt="f1imagen" height="400"/>
                             <div className="card-body">
                                 <Card.Title>Arqua</Card.Title>
                                 <Card.Text>A web sit developed for ARQUA "Arquéologos del Uruguay Asociados".</Card.Text>
-                                <a href="https://www.arqua.com.uy" className="btn btn-primary">See more...</a>
+                                <a href="https://www.arqua.com.uy" className="btn btn-primary">SEE MORE</a>
                             </div>
                         </Card>
                     </Col>
@@ -110,7 +111,7 @@ const form = useRef();
                             <div className="card-body">
                                 <Card.Title>Searcher for magic the gathering</Card.Title>
                                 <Card.Text>A portfolio project. Using React and axios to query an external api.</Card.Text>
-                                <a href="https://gervariveiro.github.io/searchCards/" className="btn btn-primary" target='blank'>See more...</a>
+                                <a href="https://gervariveiro.github.io/searchCards/" className="btn btn-primary" target='blank'>SEE MORE</a>
                             </div>
                         </Card>
                     </Col>
@@ -122,7 +123,7 @@ const form = useRef();
                             <div className="card-body">
                                 <Card.Title>Website for turistic farm</Card.Title>
                                 <Card.Text>Proyect with HTML, CSS and JS about a turistic proyect.</Card.Text>
-                                <a href="https://gervariveiro.github.io/chacra/index.html" className="btn btn-primary">See more...</a>
+                                <a href="https://gervariveiro.github.io/chacra/index.html" className="btn btn-primary">SEE MORE</a>
                             </div>
                         </Card>
                     </Col>
@@ -132,7 +133,7 @@ const form = useRef();
                             <div className="card-body">
                                 <Card.Title>UX UI Example</Card.Title>
                                 <Card.Text>A UX UI proyect for a comic searcher in Figma</Card.Text>
-                                <a href="https://www.figma.com/file/XTDkS25LfGEdodggc84qQu/Home-Page-for-Comic-Search-Concept?t=6ic0zbYHd0dLVt7Z-0" className="btn btn-primary" target='blank'>See more...</a>
+                                <a href="https://www.figma.com/file/XTDkS25LfGEdodggc84qQu/Home-Page-for-Comic-Search-Concept?t=6ic0zbYHd0dLVt7Z-0" className="btn btn-primary" target='blank'>SEE MORE</a>
                             </div>
                         </Card>
                     </Col>
@@ -143,28 +144,28 @@ const form = useRef();
 
         
         <section id="Myskills" className='mt-5'>
-            <h3 className="m-5 d-flex justify-content-center">My Skills</h3>
+            <h3 className="m-5 d-flex justify-content-center">SKILLS</h3>
             <Container>
                 <Row className="d-flex flex-row ml-5 justify-content-center p-5">
-                    <Col className='col-12 col-md-2 d-flex justify-content-center'>
+                    <Col className='col-12 col-md-1 d-flex justify-content-center'>
                             <div className='mb-4 mt-2 d-flex flex-column'>
                                 <img src={HtmlIcon} width="50" height="50"></img>
                                 <label className='text-center'>HTML</label>
                             </div>
                     </Col>
-                    <Col className='col-12 col-md-2 d-flex justify-content-center'>        
+                    <Col className='col-12 col-md-1 d-flex justify-content-center'>        
                             <div className='mb-4 d-flex flex-column justify-content-center'>
                                 <img src={CssIcon} width="50" height="50"></img>
                                 <label className='text-center'>CSS</label>
                             </div>
                     </Col>
-                    <Col className='col-12 col-md-2 d-flex justify-content-center'>
+                    <Col className='col-12 col-md-1 d-flex justify-content-center'>
                             <div className='mb-4 d-flex flex-column justify-content-center'>
                                 <img src={DbIcon} width="50" height="50" className='align-self-center'></img>
                                 <label className='text-center'>MONGDB-MYSQL</label>
                             </div>
                     </Col>
-                    <Col className='col-12 col-md-2  d-flex justify-content-center'>
+                    <Col className='col-12 col-md-1  d-flex justify-content-center'>
                             <div className='mb-4 d-flex flex-column justify-content-center'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#042C4B" className="bi bi-bootstrap-fill" viewBox="0 0 16 16" className='align-self-center'>
                                     <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
@@ -173,19 +174,19 @@ const form = useRef();
                                 <label className='text-center'>Bootstrap</label>
                             </div>
                     </Col>
-                    <Col className='col-12 col-md-2  d-flex justify-content-center'>
+                    <Col className='col-12 col-md-1  d-flex justify-content-center'>
                             <div className='mb-4 d-flex flex-column justify-content-center'>
                                 <img src={NodeIcon} width="50" height="50"></img>
                                 <label className='text-center'>NODEJS</label>
                             </div>
                     </Col>        
-                    <Col className='col-12 col-md-2  d-flex justify-content-center'>
+                    <Col className='col-12 col-md-1  d-flex justify-content-center'>
                             <div className='mb-4 d-flex flex-column justify-content-center'>
                                 <img src={JsIcon} width="50" height="50" className='align-self-center'></img>
                                 <label className='text-center'>JAVASCRIPT</label>
                             </div>
                     </Col>        
-                    <Col className='col-12 col-md-2 d-flex justify-content-center'>
+                    <Col className='col-12 col-md-1 d-flex justify-content-center'>
                             <div className='mb-4 d-flex flex-column justify-content-center'>
                                 <img src={ReactIcon} width="50" height="50"></img>
                                 <label className='text-center'>React</label>
@@ -196,38 +197,31 @@ const form = useRef();
             
         </section>
         <section id="ContactMe" className='mt-5'>
-            <h3 className="m-5 d-flex justify-content-center">Contact Me</h3>
+            <h2 className="m-5 d-flex justify-content-center">CONTACT</h2>
             <Container>
                 <Row className="d-flex flex-row ml-5 justify-content-center p-4">
-                   <Col className='col-12 col-md-2 d-flex justify-content-center'>
+                   <Col className='col-12 col-md-1 d-flex justify-content-center'>
                             <div className='mb-4'>
                             <a href='https://www.linkedin.com/in/gervasio-riveiro-martínez-36a8b0234/' target="_blank">
                                 <img src={LinkedIcon} className='imgicon' width="50" height="50"></img>
                             </a>
                         </div>
                     </Col>
-                    <Col className='col-12 col-md-2 d-flex justify-content-center'>
-                        <div className='mb-4'>
-                            <a href='https://www.facebook.com/gervasio.riveiro/' target="_blank">
-                                <img src={FaceIcon} className='imgicon' width="50" height="50"></img>
-                            </a>
-                        </div>
-                    </Col>
-                    <Col className='col-12 col-md-2 d-flex justify-content-center'>
+                    <Col className='col-12 col-md-1 d-flex justify-content-center'>
                             <div className='mb-4'>
                                 <a href='https://github.com/gervariveiro' target="_blank">
                                     <img src={GitHubIcon} className='imgicon' width="50" height="50"></img>
                                 </a>
                             </div>
                     </Col>
-                    <Col className='col-12 col-md-2 d-flex justify-content-center'>
+                    <Col className='col-12 col-md-1 d-flex justify-content-center'>
                             <div className='mb-4'>
                                 <a href='mailto:gervasioriveiro@gmail.com?Subject=Contacto' target="_blank">
                                     <img src={mailIcon} className='imgicon' width="45" height="40"></img>
                                 </a>
                             </div>
                     </Col>
-                    <Col className='col-12 col-md-2 d-flex justify-content-center'>
+                    <Col className='col-12 col-md-1 d-flex justify-content-center'>
                             <div className='mb-4'>
                                 <a href='https://soundcloud.com/gerva14' target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#042C4B"  class="bi bi-music-note-list" viewBox="0 0 16 16">
@@ -243,22 +237,22 @@ const form = useRef();
                 <Container id="ContactMe" className='container-fluid'>
                 <Row>
                     <Col className='d-flex justify-content-center'>
-                        <form  className="mx-5 mt-5 formclass p-5" ref={form} onSubmit={sendEmail}>
+                        <form  className="mx-5 mt-2 formclass p-5" ref={form} onSubmit={sendEmail}>
                             <Form.Group className="mb-3">
                                 <h5>Name</h5>
-                                <Form.Control className="my-2 mx-4" type="text" name="name"  placeholder="Enter name" />
+                                <Form.Control className="my-2" type="text" name="name"  placeholder="Enter name" />
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                 <h5>Email</h5>
-                                <Form.Control className="my-2 mx-4"  name="email" type="email" placeholder="Enter email" />
+                                <Form.Control className="my-2"  name="email" type="email" placeholder="Enter email" />
                             </Form.Group>
                             <Form.Group as={Col} id="formGridQuery">
                             <h5>Message</h5>
-                            <textarea className="m-4 textarea" type="text" name="message" rows={3} placeholder="Write your message">
+                            <textarea className="textarea" type="text" name="message" rows={3} placeholder="Write your message">
                             </textarea>
                             </Form.Group>
-                            <Button variant="primary" className='mx-4 my-3' type="submit" onClick={() => mostrarAlert()} >
-                                Send
+                            <Button variant="primary" className='my-3 ' type="submit" onClick={() => mostrarAlert()} >
+                                SEND
                             </Button>
                     </form>
                 </Col>

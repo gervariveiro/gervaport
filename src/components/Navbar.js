@@ -14,16 +14,16 @@ function NavigateBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto h5">
             <Nav.Link className="px-4">
-              <Link to="Home">About Me</Link>
+              <Link to="Home">ABOUT ME</Link>
             </Nav.Link>
             <Nav.Link className="px-4">
-              <Link to="Mywork">My Work</Link>
+              <Link to="Mywork">WORK</Link>
             </Nav.Link>
             <Nav.Link className="px-4">
-              <Link to="Myskills">My Skills</Link>
+              <Link to="Myskills">SKILLS</Link>
             </Nav.Link>
             <Nav.Link className="px-4">
-              <Link to="ContactMe">Contact Me</Link>
+              <Link to="ContactMe">CONTACT</Link>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
