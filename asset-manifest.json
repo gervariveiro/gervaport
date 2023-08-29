@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.da8eb93d.css",
-    "main.js": "/static/js/main.774f87ec.js",
+    "main.js": "/static/js/main.699da088.js",
     "static/media/gervaphoto1.png": "/static/media/gervaphoto1.6aca6be9197937ccf92e.png",
     "static/media/Resume_Gervasio_Riveiro.pdf": "/static/media/Resume_Gervasio_Riveiro.d7871af07e5593888e9a.pdf",
     "static/media/UX example.JPG": "/static/media/UX example.159845d9680374f379f6.JPG",
@@ -19,10 +19,10 @@
     "static/media/linkedicon.png": "/static/media/linkedicon.1e4e8806029febd90dee.png",
     "index.html": "/index.html",
     "main.da8eb93d.css.map": "/static/css/main.da8eb93d.css.map",
-    "main.774f87ec.js.map": "/static/js/main.774f87ec.js.map"
+    "main.699da088.js.map": "/static/js/main.699da088.js.map"
   },
   "entrypoints": [
     "static/css/main.da8eb93d.css",
-    "static/js/main.774f87ec.js"
+    "static/js/main.699da088.js"
   ]
 }
