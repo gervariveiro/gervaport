@@ -69,7 +69,7 @@ const form = useRef();
     return (
     <><NavigateBar />
 
-            <Container className='filosofia d-flex flex-row bg-primary text-white p-5'>
+            <Container className='filosofia d-flex flex-row bg-primary text-white p-5' id='Home'>
                 <Row className=''>
                     <Col className='d-flex flex-column col-12 col-md-6'>
                         <Image src={GervaPhoto} alt="foto" width="260" height="auto"
