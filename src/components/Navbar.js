@@ -7,9 +7,7 @@ function NavigateBar() {
   return (
     <Navbar bg="dark" expand="lg" className="navbar-dark navbar-expand-md fixed-top">
       <Container>
-        <Navbar.Brand>
-          <Link href="Home">Gervasio Riveiro</Link>
-        </Navbar.Brand>
+      
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto h5">
