@@ -76,10 +76,8 @@ const form = useRef();
                         className="rounded-circle align-self-center"/>
                     </Col>
                     <Col className="d-flex flex-column justify-content-center col-12 col-md-6 text-start">
-                        <h3 className="mb-4">Hi!</h3>
-                        <p className="h5">How are you?
-                            On this site you can see some of my work. I offer services in dynamic web site development for your business or work with data processing.</p>
-                        <p className="h5 mt-3">Gervasio Riveiro</p>
+                        <h3 className="mb-4">Hi! Im Gervasio Riveiro</h3>
+                        <p className="h5">I am front-end developer. I offer my services for dynamics web sites for your business proyect or work in data processing for market research.</p>
                         <a className="btn btn-light align-self-start d-inline mt-5" variant="light" size="lg" href={PDF} download>
                         RESUME
                     </a>
