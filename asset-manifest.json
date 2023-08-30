@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.da8eb93d.css",
-    "main.js": "/static/js/main.699da088.js",
+    "main.css": "/static/css/main.bcfae08c.css",
+    "main.js": "/static/js/main.70d97a26.js",
     "static/media/gervaphoto1.png": "/static/media/gervaphoto1.6aca6be9197937ccf92e.png",
     "static/media/Resume_Gervasio_Riveiro.pdf": "/static/media/Resume_Gervasio_Riveiro.d7871af07e5593888e9a.pdf",
     "static/media/UX example.JPG": "/static/media/UX example.159845d9680374f379f6.JPG",
@@ -12,17 +12,16 @@
     "static/media/nodeicon.png": "/static/media/nodeicon.8391a5b2b79d1ecd987c.png",
     "static/media/githubicon.png": "/static/media/githubicon.f3d602ad8f5701b482de.png",
     "static/media/dbicon.png": "/static/media/dbicon.565df0a275523e496a47.png",
-    "static/media/faceicon.png": "/static/media/faceicon.a9f5b9a5961c9c28aefe.png",
     "static/media/cssicon.png": "/static/media/cssicon.c82d6dce2e7293bf7d6f.png",
     "static/media/htmlicon.png": "/static/media/htmlicon.21e149d9b7a6d7296810.png",
     "static/media/jsicon.png": "/static/media/jsicon.96cc337ed1e9d353fd79.png",
     "static/media/linkedicon.png": "/static/media/linkedicon.1e4e8806029febd90dee.png",
     "index.html": "/index.html",
-    "main.da8eb93d.css.map": "/static/css/main.da8eb93d.css.map",
-    "main.699da088.js.map": "/static/js/main.699da088.js.map"
+    "main.bcfae08c.css.map": "/static/css/main.bcfae08c.css.map",
+    "main.70d97a26.js.map": "/static/js/main.70d97a26.js.map"
   },
   "entrypoints": [
-    "static/css/main.da8eb93d.css",
-    "static/js/main.699da088.js"
+    "static/css/main.bcfae08c.css",
+    "static/js/main.70d97a26.js"
   ]
 }
