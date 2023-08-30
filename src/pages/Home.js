@@ -20,13 +20,11 @@ import UXexample from '../assets/UX example.JPG';
 import FarmImg from '../assets/farmphoto.jpg';
 import GitHubIcon from '../assets/githubicon.png';
 import mailIcon from '../assets/mailIcon.png';
-import FaceIcon from '../assets/faceicon.png';
 import LinkedIcon from '../assets/linkedicon.png';
 import swal from 'sweetalert';
 import emailjs from '@emailjs/browser';
 import Arqua from '../assets/Arqua.JPG';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faFileArrowDown} from '@fortawesome/free-solid-svg-icons';
+
 
 
 
@@ -69,18 +67,18 @@ const form = useRef();
     return (
     <><NavigateBar />
 
-            <Container className='filosofia d-flex flex-row bg-primary text-white p-5' id='Home'>
+            <Container className='filosofia d-flex flex-row bg-primary text-white p-5 ' id='Home'>
                 <Row className=''>
                     <Col className='d-flex flex-column col-12 col-md-6'>
                         <Image src={GervaPhoto} alt="foto" width="260" height="auto"
                         className="rounded-circle align-self-center"/>
                     </Col>
-                    <Col className="d-flex flex-column justify-content-center col-12 col-md-6 text-start">
-                        <h3 className="mb-4">Hi! Im Gervasio Riveiro</h3>
-                        <p className="h5">I am front-end developer. I offer my services for dynamics web sites for your business proyect or work in data processing for market research.</p>
+                    <Col className="d-flex flex-column justify-content-center col-12 col-md-6 text-start ">
+                        <h3 className="mb-4 ">Hi! Im Gervasio Riveiro</h3>
+                        <p className="h5 tracking-in-expand-fwd">I am front-end developer. I offer my services for dynamics web sites for your business proyect or work in data processing for market research.</p>
                         <a className="btn btn-light align-self-start d-inline mt-5" variant="light" size="lg" href={PDF} download>
                         RESUME
-                    </a>
+                        </a>
                     </Col>
                     
                 </Row>
@@ -147,25 +145,25 @@ const form = useRef();
                 <Row className="d-flex flex-row ml-5 justify-content-center p-5">
                     <Col className='col-12 col-md-1 d-flex justify-content-center'>
                             <div className='mb-4 mt-2 d-flex flex-column'>
-                                <img src={HtmlIcon} width="50" height="50"></img>
+                                <img src={HtmlIcon} width="50" height="50" alt=''></img>
                                 <label className='text-center'>HTML</label>
                             </div>
                     </Col>
                     <Col className='col-12 col-md-1 d-flex justify-content-center'>        
                             <div className='mb-4 d-flex flex-column justify-content-center'>
-                                <img src={CssIcon} width="50" height="50"></img>
+                                <img src={CssIcon} width="50" height="50" alt=''></img>
                                 <label className='text-center'>CSS</label>
                             </div>
                     </Col>
                     <Col className='col-12 col-md-1 d-flex justify-content-center'>
                             <div className='mb-4 d-flex flex-column justify-content-center'>
-                                <img src={DbIcon} width="50" height="50" className='align-self-center'></img>
+                                <img src={DbIcon} width="50" height="50" className='align-self-center' alt=''></img>
                                 <label className='text-center'>MONGDB-MYSQL</label>
                             </div>
                     </Col>
                     <Col className='col-12 col-md-1  d-flex justify-content-center'>
                             <div className='mb-4 d-flex flex-column justify-content-center'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#042C4B" className="bi bi-bootstrap-fill" viewBox="0 0 16 16" className='align-self-center'>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#042C4B" className="bi bi-bootstrap-fill align-self-center" viewBox="0 0 16 16">
                                     <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
                                     <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"/>
                                 </svg>
@@ -174,19 +172,19 @@ const form = useRef();
                     </Col>
                     <Col className='col-12 col-md-1  d-flex justify-content-center'>
                             <div className='mb-4 d-flex flex-column justify-content-center'>
-                                <img src={NodeIcon} width="50" height="50"></img>
+                                <img src={NodeIcon} width="50" height="50" alt=''></img>
                                 <label className='text-center'>NODEJS</label>
                             </div>
                     </Col>        
                     <Col className='col-12 col-md-1  d-flex justify-content-center'>
                             <div className='mb-4 d-flex flex-column justify-content-center'>
-                                <img src={JsIcon} width="50" height="50" className='align-self-center'></img>
+                                <img src={JsIcon} width="50" height="50" className='align-self-center' alt=''></img>
                                 <label className='text-center'>JAVASCRIPT</label>
                             </div>
                     </Col>        
                     <Col className='col-12 col-md-1 d-flex justify-content-center'>
                             <div className='mb-4 d-flex flex-column justify-content-center'>
-                                <img src={ReactIcon} width="50" height="50"></img>
+                                <img src={ReactIcon} width="50" height="50" alt=''></img>
                                 <label className='text-center'>React</label>
                             </div>
                     </Col>
@@ -201,21 +199,21 @@ const form = useRef();
                    <Col className='col-12 col-md-1 d-flex justify-content-center'>
                             <div className='mb-4'>
                             <a href='https://www.linkedin.com/in/gervasio-riveiro-martínez-36a8b0234/' target="_blank">
-                                <img src={LinkedIcon} className='imgicon' width="50" height="50"></img>
+                                <img src={LinkedIcon} className='imgicon' width="50" height="50" alt=''></img>
                             </a>
                         </div>
                     </Col>
                     <Col className='col-12 col-md-1 d-flex justify-content-center'>
                             <div className='mb-4'>
                                 <a href='https://github.com/gervariveiro' target="_blank">
-                                    <img src={GitHubIcon} className='imgicon' width="50" height="50"></img>
+                                    <img src={GitHubIcon} className='imgicon' width="50" height="50" alt=''></img>
                                 </a>
                             </div>
                     </Col>
                     <Col className='col-12 col-md-1 d-flex justify-content-center'>
                             <div className='mb-4'>
                                 <a href='mailto:gervasioriveiro@gmail.com?Subject=Contacto' target="_blank">
-                                    <img src={mailIcon} className='imgicon' width="45" height="40"></img>
+                                    <img src={mailIcon} className='imgicon' width="45" height="40" alt=''></img>
                                 </a>
                             </div>
                     </Col>
