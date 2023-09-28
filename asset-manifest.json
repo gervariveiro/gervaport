@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.bcfae08c.css",
-    "main.js": "/static/js/main.c1429444.js",
-    "static/media/Resume_Gervasio_Riveiro.pdf": "/static/media/Resume_Gervasio_Riveiro.346d0923f9e787be2c24.pdf",
+    "main.css": "/static/css/main.8b69e96a.css",
+    "main.js": "/static/js/main.9ac63c3d.js",
     "static/media/UX example.JPG": "/static/media/UX example.159845d9680374f379f6.JPG",
     "static/media/Arqua.JPG": "/static/media/Arqua.243d5d71770433acd1a5.JPG",
     "static/media/farmphoto.jpg": "/static/media/farmphoto.15f8fdcf21b1779cf6a6.jpg",
-    "static/media/FotoPerfil.jpg": "/static/media/FotoPerfil.6b7ce96f383506679da7.jpg",
+    "static/media/Resume_Gervasio_Riveiro.pdf": "/static/media/Resume_Gervasio_Riveiro.a145b90f2fc877df2d6b.pdf",
     "static/media/mtgphoto.JPG": "/static/media/mtgphoto.50b3d68f1f350d2dd147.JPG",
     "static/media/reacticon.png": "/static/media/reacticon.6f0877414b4cb2d28adb.png",
     "static/media/nodeicon.png": "/static/media/nodeicon.8391a5b2b79d1ecd987c.png",
@@ -17,11 +16,11 @@
     "static/media/jsicon.png": "/static/media/jsicon.96cc337ed1e9d353fd79.png",
     "static/media/linkedicon.png": "/static/media/linkedicon.1e4e8806029febd90dee.png",
     "index.html": "/index.html",
-    "main.bcfae08c.css.map": "/static/css/main.bcfae08c.css.map",
-    "main.c1429444.js.map": "/static/js/main.c1429444.js.map"
+    "main.8b69e96a.css.map": "/static/css/main.8b69e96a.css.map",
+    "main.9ac63c3d.js.map": "/static/js/main.9ac63c3d.js.map"
   },
   "entrypoints": [
-    "static/css/main.bcfae08c.css",
-    "static/js/main.c1429444.js"
+    "static/css/main.8b69e96a.css",
+    "static/js/main.9ac63c3d.js"
   ]
 }
